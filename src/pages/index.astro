@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import GitHubInIcon from '../components/icons/GitHub.astro';
+import LinkedInIcon from '../components/icons/LinkedIn.astro';
+import CvIcon from '../components/icons/Cv.astro';
+import Social from '../components/icons/Social.astro';
+---
+
+<Layout title="Porfolio Ignvcioo - Desarrollador y Programador Web">
+	<main>
+
+		<!-- Header -->
+		<section class="w-full lg:w-[740px] mx-auto py-44">
+			<h1 class="text-4xl font-bold flex flex-row pb-4"> <span class="text-1xl">🖐️</span>Hola, soy Benjamín López</h1>
+			<h2 class="text-2xl">Desarrollador Web Full Stack! Con 1 año de experiencia,  estoy aquí para ayudarte a crear tu sitio web ideal. ¡Construyamos algo increíble juntos! 🚀</h2>
+
+			<!-- Iconos -->
+			<nav class="flex gap-x-4 mt-6">
+				<!-- LinkedIn -->
+				<Social href="https://www.linkedin.com/in/benjam%C3%ADn-l%C3%B3pez-dur%C3%A1n-bb94192b0/">
+					<LinkedInIcon class="w-6 h-6" />
+					LinkedIn
+				</Social>
+	
+				<!-- GitHub -->
+				<Social href="https://github.com/Ignvcioo">
+					<GitHubInIcon class="w-6 h-6" />
+					GitHub
+				</Social>
+			</nav>
+		</section>
+
+		<!-- Sobre Mi -->
+		<section class="mx-auto max-w-6xl">
+			<h1 class="text-5xl font-bold pb-10">Sobre Mi</h1>
+			<p class="text-2xl">Soy analista programador con experiencia en diseño front-end y backend. Mi enfoque es fusionar creatividad y solidez técnica para crear experiencias únicas. Soy autodidacta, adaptable y siempre estoy buscando aprender y enfrentar nuevos desafíos.</p>
+			<nav class="flex gap-x-4 mt-6">
+				<!-- CV -->
+				<Social href="/assets/cv.pdf">
+					<CvIcon class="w-6 h-6" />
+					Descargar mi CV
+				</Social>
+			</nav>
+		</section>
+
+		
+		
+	</main>
+</Layout>
